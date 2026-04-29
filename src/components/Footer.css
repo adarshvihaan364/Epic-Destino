@@ -1,0 +1,128 @@
+.footer {
+  background-color: var(--white);
+  color: var(--text-muted);
+  padding: 80px 0 30px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-brand .logo {
+  margin-bottom: 25px;
+}
+
+.footer-brand .logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-desc {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  max-width: 300px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  background-color: var(--bg-light);
+  color: var(--text-heading);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-5px);
+}
+
+.footer-links h3, .footer-contact h3 {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  color: var(--text-heading);
+}
+
+.footer-links ul li {
+  margin-bottom: 15px;
+}
+
+.footer-links ul li a {
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.footer-links ul li a:hover {
+  color: var(--primary);
+  padding-left: 10px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-muted);
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-legal a {
+  color: var(--text-muted);
+}
+
+.footer-legal a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+

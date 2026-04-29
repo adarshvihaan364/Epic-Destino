@@ -1,0 +1,118 @@
+.booking-bar {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: -20px auto 0;
+  position: relative;
+  z-index: 10;
+}
+
+.booking-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  padding-right: 20px;
+  border-right: 1px solid var(--border);
+}
+
+.booking-field:first-child {
+  flex: 2; /* Even more width for the location section */
+}
+
+.booking-field:nth-last-child(2) {
+  border-right: none;
+}
+
+.field-icon {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.field-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-content label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.field-content select, .field-content input {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--text-heading);
+  font-size: 1rem;
+  padding: 0;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow */
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.dropdown-icon {
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+
+.search-btn {
+  background-color: var(--primary);
+  width: 60px;
+  height: 60px;
+  min-width: 60px; /* Prevent shrinking */
+  min-height: 60px; /* Prevent shrinking */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+  transition: var(--transition);
+  flex-shrink: 0; /* Important! */
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--primary-dark);
+}
+
+@media (max-width: 1024px) {
+  .booking-bar {
+    flex-direction: column;
+    margin: 40px 24px 0;
+    gap: 30px;
+  }
+  
+  .booking-field {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 15px;
+  }
+}

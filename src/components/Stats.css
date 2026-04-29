@@ -1,0 +1,42 @@
+.stats-section {
+  padding: 40px 0;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.brands-container {
+  text-align: center;
+}
+
+.brands-title {
+  font-family: var(--font-script);
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.brands-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brand-item {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  transition: var(--transition);
+}
+
+.brand-item:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .brands-grid {
+    justify-content: center;
+  }
+}
