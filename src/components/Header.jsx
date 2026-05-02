@@ -14,23 +14,31 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-content">
-        <div className="logo">
-          <img src="https://epic.vihaandigitals.com/wp-content/uploads/elementor/thumbs/Epic-Destino-Logo-Final-1-rl2jate12eakuom3eylni0p29ljcr8ae7h0izhgirk.png" alt="Epic Destino" className="logo-img" />
+        <div className="logo" onClick={(e) => scrollToSection(e, 'home')}>
+          <img src="https://epic.vihaandigitals.com/wp-content/uploads/elementor/thumbs/Epic-Destino-Logo-Final-1-rl2jate12eakuom3eylni0p29ljcr8ae7h0izhgirk.png" alt="Epic Destino" className="logo-img" style={{ cursor: 'pointer' }} />
         </div>
 
         <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul className="nav-links">
-            <li><a href="#" className="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Tour List</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="active">Home</a></li>
+            <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About Us</a></li>
+            <li><a href="#tours" onClick={(e) => scrollToSection(e, 'tours')}>Destinations</a></li>
+            <li><a href="#tours" onClick={(e) => scrollToSection(e, 'tours')}>Tour List</a></li>
+            <li><a href="#offers" onClick={(e) => scrollToSection(e, 'offers')}>Offers</a></li>
+            <li><a href="#blogs" onClick={(e) => scrollToSection(e, 'blogs')}>News</a></li>
+            <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact Us</a></li>
           </ul>
         </nav>
 

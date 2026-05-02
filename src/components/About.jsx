@@ -1,6 +1,5 @@
 import React from 'react';
 import { CheckCircle2, ChevronRight } from 'lucide-react';
-import './About.jsx'; // Wait, I meant About.css
 import './About.css';
 
 const About = () => {
@@ -21,9 +20,8 @@ const About = () => {
           <span className="script-text">About company</span>
           <h2 className="section-title">Great Opportunity for <span className="highlight-text">Adventure & Travels</span></h2>
           <p className="section-desc">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the 
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the 
-            distracted the readable content of a page when looking at layout the point.
+            Epic Destino is a premier travel agency dedicated to crafting unique and unforgettable journeys. 
+            With over 13 years of experience, we specialize in high-end tours that blend adventure with luxury.
           </p>
 
           <ul className="about-features">

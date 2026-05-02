@@ -26,10 +26,10 @@ const Features = () => {
 
         <div className="features-content">
           <span className="script-text">Why Choose Us</span>
-          <h2 className="section-title">Get The <span className="highlight-text">Best Travel</span> Experience With Gotur</h2>
+          <h2 className="section-title">Get The <span className="highlight-text">Best Travel</span> Experience With Epic Destino</h2>
           <p className="section-desc">
-            It is a long established fact that a reader will be distracted the 
-            readable content of a page when looking at layout the point.
+            We prioritize your comfort and safety above all else. Our team of travel experts 
+            hand-picks every destination and accommodation to ensure a premium experience.
           </p>
 
           <div className="features-list">

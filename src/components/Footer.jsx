@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Epic Destino. All rights reserved.</p>
+          <p>&copy; 2026 Epic Destino. All rights reserved.</p>
           <div className="footer-legal">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

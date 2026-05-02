@@ -14,12 +14,12 @@ const Hero = () => {
         <div className="hero-content animate-fade-in-up">
           <span className="script-text">Discover Your</span>
           <h1 className="hero-title">
-            Next Step <br />
-            <span className="highlight-text">Destination</span>
+            Your Ultimate <br />
+            <span className="highlight-text">Travel Partner</span>
           </h1>
           <p className="hero-desc">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the 
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
+            Explore the world's most breathtaking destinations with Epic Destino. 
+            We provide curated experiences, luxury accommodations, and memories that last a lifetime.
           </p>
           <div className="hero-actions">
             <button className="btn btn-primary">
