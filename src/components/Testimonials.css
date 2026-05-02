@@ -64,3 +64,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 0;
+  }
+  
+  .testimonial-card {
+    padding: 30px;
+  }
+}

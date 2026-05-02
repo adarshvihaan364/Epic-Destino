@@ -91,3 +91,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .blogs-section {
+    padding: 60px 0;
+  }
+  
+  .blog-image {
+    height: 200px;
+  }
+}

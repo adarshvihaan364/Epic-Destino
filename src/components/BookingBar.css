@@ -106,7 +106,8 @@
   .booking-bar {
     flex-direction: column;
     margin: 40px 24px 0;
-    gap: 30px;
+    gap: 15px;
+    padding: 20px;
   }
   
   .booking-field {
@@ -114,5 +115,16 @@
     border-right: none;
     border-bottom: 1px solid var(--border);
     padding-bottom: 15px;
+    padding-right: 0;
+  }
+
+  .booking-field:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  .search-btn {
+    width: 100%;
+    border-radius: 15px;
+    height: 55px;
   }
 }

@@ -127,3 +127,18 @@
 .tour-btn {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .tours-section {
+    padding: 60px 0;
+  }
+  
+  .tour-image {
+    height: 280px;
+  }
+  
+  .tours-grid {
+    gap: 20px;
+    padding: 0 10px;
+  }
+}
